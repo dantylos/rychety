@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+:root body {
+  background-color: #f0fadd;
+}
+:root a {
+  text-decoration: none;
+}
+:root ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  padding: 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .logo {
+  max-width: 150px;
+}
+header .container .logo img {
+  width: 100%;
+  display: block;
+}
+header .container ul {
+  display: flex;
+  gap: 4rem;
+}
+header .container ul li a {
+  color: #000000;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  transition: 0.15s;
+}
+header .container ul li a:hover {
+  color: #1daa5c;
+}
+
+main #main-banner {
+  padding: 7rem 0;
+}
+main #main-banner .container {
+  max-width: 1000px;
+}
+main #main-banner .container article {
+  border-radius: 20px;
+  padding: 2rem;
+  margin: auto;
+  position: relative;
+  background-color: #166f48;
+}
+main #main-banner .container article:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -1.5px;
+  right: -10px;
+  width: 180px;
+  height: 180px;
+  background-image: url("/assets/images/Pet.png");
+}
+main #main-banner .container article .main-info h1 {
+  color: #ae87df;
+  font-weight: 600;
+  font-size: 36px;
+  margin-bottom: 24px;
+}
+main #main-banner .container article .main-info p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 26px;
+  max-width: 760px;
+  margin-left: 12px;
+}
+main #main-banner .container .devis {
+  max-width: 860px;
+  margin: 36px auto;
+}
+main #main-banner .container .devis .citation {
+  color: #000000;
+  text-align: right;
+  font-size: 26px;
+  margin-bottom: 12px;
+}
+main #main-banner .container .devis p {
+  color: #ae87df;
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+
+footer {
+  border-top: 1px solid #bcbcbc;
+  padding: 4rem 0 1rem;
+  background-color: #166f48;
+}
+footer .container {
+  text-align: center;
+  color: #fff;
+}
+footer .container .main_foot-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .container .main_foot-menu h3 {
+  color: #ae87df;
+  font-size: 36px;
+  margin-bottom: 40px;
+  text-align: left;
+}
+footer .container .main_foot-menu a {
+  max-width: 60px;
+}
+footer .container .main_foot-menu a img {
+  width: 100%;
+  display: block;
+}
+footer .container p {
+  font-size: 16px;
+}
+footer .container .contact-info {
+  font-size: 20px;
+  color: #a3a3a3;
+  margin: 24px 0 8px;
+}
+footer .container .tel {
+  color: #fff;
+  font-size: 16px;
+}
+footer .container .copyright {
+  color: #a3a3a3;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 32px;
+}
+
+@media screen and (max-width: 1224px) {
+  .container {
+    padding: 0 12px;
+  }
+}
+@media screen and (max-width: 1180px) {
+  header .container ul {
+    gap: 2rem;
+  }
+  header .container ul li a {
+    font-size: 21px;
+    letter-spacing: 1px;
+  }
+}
+@media screen and (max-width: 992px) {
+  main #main-banner .container {
+    margin: 0 20px;
+  }
+  main #main-banner .container article:after {
+    right: -22px;
+  }
+  main #main-banner .container article .main-info p {
+    letter-spacing: 1px;
+    line-height: 24px;
+    max-width: 548px;
+  }
+}
+@media screen and (max-width: 767px) {
+  main #main-banner .container article .main-info p {
+    max-width: 100%;
+  }
+  main #main-banner .container article .main-info {
+    padding-bottom: 140px;
+  }
+  main #main-banner .container article:after {
+    bottom: -0.5px;
+    right: 11px;
+    width: 180px;
+    height: 180px;
+  }
+  main #main-banner .container article {
+    padding: 2rem 1rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

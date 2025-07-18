@@ -4,6 +4,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  &::selection{
+    background-color: #1daa5c;
+  }
 }
 
 // Colours
@@ -98,15 +102,11 @@ main{
         position: relative;
         background-color: $green;
 
-        &:after{
-          content: "";
-          display: block;
+        .main-banner_image{
+          max-width: 180px;
           position: absolute;
-          bottom: -1.5px;
+          bottom: -4.5px;
           right: -10px;
-          width: 180px;
-          height: 180px;
-          background-image: url("/assets/images/Pet.png");
         }
 
         .main-info{
@@ -230,10 +230,6 @@ footer{
     margin: 0 20px;
   }
 
-  main #main-banner .container article:after {
-    right: -22px;
-  }
-
   main #main-banner .container article .main-info p {
     letter-spacing: 1px;
     line-height: 24px;
@@ -248,13 +244,6 @@ footer{
 
   main #main-banner .container article .main-info {
     padding-bottom: 140px;
-  }
-
-  main #main-banner .container article:after {
-    bottom: -0.5px;
-    right: 11px;
-    width: 180px;
-    height: 180px;
   }
 
   main #main-banner .container article {

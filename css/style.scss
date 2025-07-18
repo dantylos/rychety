@@ -257,10 +257,6 @@ footer{
 }
 
 @media screen and (max-width: 992px) {
-  main #main-banner .container {
-    margin: 0 20px;
-  }
-
   main #main-banner .container article .main-info p {
     letter-spacing: 1px;
     line-height: 24px;
@@ -283,5 +279,41 @@ footer{
 
   header .container .flex-reverse .contact-link a {
     top: 0;
+  }
+
+  main #main-banner {
+    padding: 3rem 0;
+  }
+
+  main #main-banner .container article .main-info h1 {
+    font-size: 32px;
+    margin-bottom: 18px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  header .container {
+    padding: 0;
+  }
+
+  main #main-banner .container article .main-info h1 {
+    font-size: 28px;
+  }
+
+  main #main-banner .container article .main-info p {
+    font-size: 17px;
+    margin-left: 8px;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  main #main-banner .container article .main-info h1 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  main #main-banner .container article .main-info h1 {
+    font-size: 23px;
   }
 }

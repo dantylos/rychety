@@ -6,56 +6,37 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Rychety</title>
-    <link rel="stylesheet" href="css/styles/style.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header id="header">
     <div class="container">
         <div class="logo">
-            <a href="index.html"><img src="assets/images/logo.png" alt="Rychety"></a>
+            <a href="index.html"><img src="assets/icons/logo.svg" alt="Rychety"></a>
         </div>
 
-<!--        <nav>-->
-<!--            <ul>-->
-<!--                <li><a href="#">Novinky</a></li>-->
-<!--                <li><a href="#">Vycvik psu</a></li>-->
-<!--                <li><a href="#">Galerie</a></li>-->
-<!--                <li><a href="#">Odkazy</a></li>-->
-<!--                <li><a href="#footer">Kontakt</a></li>-->
-<!--            </ul>-->
-<!--        </nav>-->
+        <nav class="d-flex">
 
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
+            <input type="checkbox" id="nav-check">
 
-                <!-- Burger Menu Button -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Collapsible Menu Content -->
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Novinky</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Vycvik psu</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Galerie</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Odkazy</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#footer">Kontakt</a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="nav-btn">
+                <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
             </div>
+
+            <div class="nav-list">
+                <ul class="ls-none menu-media">
+                    <li><a href="#">Novinky</a></li>
+                    <li><a href="#">Vycvik</a></li>
+                    <li><a href="#">Galerie</a></li>
+                    <li><a href="#">Odkazy</a></li>
+                    <li><a href="#footer">Kontakt</a></li>
+                </ul>
+            </div>
+
         </nav>
     </div>
 </header>
@@ -92,6 +73,5 @@
     </div>
 </footer>
 
-<script src="js/bootstrap.bundle.js"></script>
 </body>
 </html>

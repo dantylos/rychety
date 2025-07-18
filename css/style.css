@@ -51,6 +51,24 @@ header .container .logo img {
   width: 100%;
   display: block;
 }
+header .container .flex-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+header .container .flex-reverse .contact-link a {
+  color: #404040;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  transition: 0.15s;
+  margin: 0 3.5rem;
+  position: relative;
+  top: 2px;
+}
+header .container .flex-reverse .contact-link a:hover {
+  color: #1daa5c;
+}
 header .container ul {
   display: flex;
   gap: 4rem;
@@ -171,6 +189,10 @@ footer .container .copyright {
   header .container ul {
     gap: 2rem;
   }
+  header .container .flex-reverse .contact-link a {
+    letter-spacing: 0;
+    margin: 0 2rem;
+  }
   header .container ul li a {
     font-size: 21px;
     letter-spacing: 1px;
@@ -195,6 +217,9 @@ footer .container .copyright {
   }
   main #main-banner .container article {
     padding: 2rem 1rem;
+  }
+  header .container .flex-reverse .contact-link a {
+    top: 0;
   }
 }
 
